@@ -1,4 +1,4 @@
-package com.example.art_selling
+package com.example.art_selling_joon
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity
