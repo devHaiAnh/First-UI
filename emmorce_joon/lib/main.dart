@@ -160,7 +160,7 @@ class _EmmorceScreenState extends State<EmmorceScreen> {
                             children: <Widget>[
                               Positioned(
                                 child: Container(
-                                  margin: EdgeInsets.only(right: 16),
+                                  margin: EdgeInsets.only(top: 32, bottom: 16),
                                   height: 200,
                                   width: screenWidth,
                                   decoration: BoxDecoration(
@@ -181,7 +181,7 @@ class _EmmorceScreenState extends State<EmmorceScreen> {
                                   height: 64,
                                   width: screenWidth - 48,
                                   decoration: BoxDecoration(
-                                      color: Colors.grey[300],
+                                      color: Colors.white.withOpacity(0.5),
                                       borderRadius: BorderRadius.circular(12)),
                                   child: Row(
                                     children: <Widget>[
@@ -217,7 +217,8 @@ class _EmmorceScreenState extends State<EmmorceScreen> {
                                             ),
                                             Text(
                                               user[index].product,
-                                              style: TextStyle(fontSize: 12),
+                                              style: TextStyle(
+                                                  fontSize: 12),
                                             ),
                                           ],
                                         ),
@@ -249,11 +250,12 @@ class _EmmorceScreenState extends State<EmmorceScreen> {
 // user accounts list
 class User {
   String name;
+  Color textColor;
   String image;
   String product;
   String productImage;
 
-  User({this.name, this.image, this.product, this.productImage});
+  User({this.name, this.textColor, this.image, this.product, this.productImage});
 }
 
 List<User> user = [
@@ -291,8 +293,9 @@ List<User> user = [
           "https://vignette.wikia.nocookie.net/supersw/images/d/d4/WF_Black_Ranger.jpg/revision/latest/scale-to-width-down/250?cb=20150214110718"),
   User(
       name: "Ronaldinho",
-      image: "https://futhead.cursecdn.com/static/img/20/players/icon-stories/238706.png",
-      product: "Gao Black",
+      image:
+          "https://futhead.cursecdn.com/static/img/20/players/icon-stories/238706.png",
+      product: "Gao Silver",
       productImage:
           "https://vignette.wikia.nocookie.net/supersw/images/b/b0/Wolf_Ranger.jpg/revision/latest/scale-to-width-down/250?cb=20150214135348"),
 ];
