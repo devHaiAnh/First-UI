@@ -217,8 +217,7 @@ class _EmmorceScreenState extends State<EmmorceScreen> {
                                             ),
                                             Text(
                                               user[index].product,
-                                              style: TextStyle(
-                                                  fontSize: 12),
+                                              style: TextStyle(fontSize: 12),
                                             ),
                                           ],
                                         ),
@@ -255,47 +254,41 @@ class User {
   String product;
   String productImage;
 
-  User({this.name, this.textColor, this.image, this.product, this.productImage});
+  User(
+      {this.name, this.textColor, this.image, this.product, this.productImage});
 }
 
 List<User> user = [
   User(
       name: "Cristiano Ronaldo",
       image: "https://futhead.cursecdn.com/static/img/20/players/20801.png",
-      product: "Gao Red",
+      product: "Soccer ball",
       productImage:
-          "https://vignette.wikia.nocookie.net/supersw/images/2/2b/Gao_Red.jpg/revision/latest/scale-to-width-down/250?cb=20150210175954"),
+          "https://images.pexels.com/photos/47730/the-ball-stadion-football-the-pitch-47730.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"),
   User(
       name: "Thierry Henry",
       image:
           "https://futhead.cursecdn.com/static/img/20/players/icon-stories/237069.png",
-      product: "Gao Yellow",
+      product: "Rugby",
       productImage:
-          "https://vignette.wikia.nocookie.net/supersw/images/4/49/WF_Yellow_Ranger.jpg/revision/latest/scale-to-width-down/250?cb=20150211165435"),
+          "https://images.pexels.com/photos/209956/pexels-photo-209956.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"),
   User(
       name: "Lionel Messi",
       image: "https://futhead.cursecdn.com/static/img/20/players/158023.png",
-      product: "Gao Blue",
+      product: "Basketball",
       productImage:
-          "https://vignette.wikia.nocookie.net/supersw/images/0/03/MAX8.jpg/revision/latest/scale-to-width-down/250?cb=20150214105229"),
+          "https://images.pexels.com/photos/945471/pexels-photo-945471.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"),
   User(
       name: "Diego Maradona",
       image:
           "https://futhead.cursecdn.com/static/img/20/players/icon-stories/237074.png",
-      product: "Gao White",
+      product: "Ping pong",
       productImage:
-          "https://vignette.wikia.nocookie.net/supersw/images/0/03/WF_White_Wild_Force_Ranger.jpg/revision/latest/scale-to-width-down/250?cb=20150214112759"),
+          "https://images.pexels.com/photos/569986/pexels-photo-569986.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"),
   User(
       name: "Zlatan Ibrahimovic",
       image: "https://futhead.cursecdn.com/static/img/20/players/41236.png",
-      product: "Gao Black",
+      product: "Tennis ball",
       productImage:
-          "https://vignette.wikia.nocookie.net/supersw/images/d/d4/WF_Black_Ranger.jpg/revision/latest/scale-to-width-down/250?cb=20150214110718"),
-  User(
-      name: "Ronaldinho",
-      image:
-          "https://futhead.cursecdn.com/static/img/20/players/icon-stories/238706.png",
-      product: "Gao Silver",
-      productImage:
-          "https://vignette.wikia.nocookie.net/supersw/images/b/b0/Wolf_Ranger.jpg/revision/latest/scale-to-width-down/250?cb=20150214135348"),
+          "https://images.pexels.com/photos/226565/pexels-photo-226565.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"),
 ];

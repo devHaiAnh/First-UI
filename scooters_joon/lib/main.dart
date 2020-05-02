@@ -333,7 +333,7 @@ class _HomePage2State extends State<HomePage2> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: <Widget>[
-              Icon(Icons.home, size: 28, color: Colors.black45),
+              Icon(Icons.home, size: 28, color: Colors.black),
               Icon(Icons.menu, size: 28, color: Colors.black45),
               Icon(Icons.search, size: 28, color: Colors.black45),
               Icon(Icons.location_on, size: 28, color: Colors.black45),

@@ -409,60 +409,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                       ],
                                     ),
                                   ),
-                                  Container(
-                                    padding: EdgeInsets.only(
-                                        left: 24.0, right: 24.0, bottom: 16.0),
-                                    height: 64,
-                                    width: screenWidth,
-                                    // color: Colors.yellow,
-                                    child: Row(
-                                      children: <Widget>[
-                                        ClipRRect(
-                                          borderRadius:
-                                              BorderRadius.circular(32),
-                                          child: Container(
-                                            height: 48,
-                                            width: 48,
-                                            child: Image(
-                                              image:
-                                                  NetworkImage(_listViewImage5),
-                                              fit: BoxFit.cover,
-                                            ),
-                                          ),
-                                        ),
-                                        SizedBox(width: 8),
-                                        Column(
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.start,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.center,
-                                          children: <Widget>[
-                                            Text(
-                                              "Litcoin",
-                                              style: TextStyle(
-                                                  fontSize: 20,
-                                                  fontWeight: FontWeight.bold),
-                                            ),
-                                            SizedBox(height: 4),
-                                            Text(
-                                              "0.0000000000001 BTC",
-                                              style: TextStyle(
-                                                  color: Colors.grey,
-                                                  fontSize: 12),
-                                            ),
-                                          ],
-                                        ),
-                                        Spacer(),
-                                        Text(
-                                          "+ 800.0",
-                                          style: TextStyle(
-                                              color: Colors.greenAccent,
-                                              fontSize: 24,
-                                              fontWeight: FontWeight.bold),
-                                        )
-                                      ],
-                                    ),
-                                  ),
                                 ],
                               ),
                               Padding(
