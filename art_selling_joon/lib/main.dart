@@ -39,14 +39,21 @@ class _HomeScreenState extends State<HomeScreen> {
                   width: screenWidth,
                   child: Row(
                     children: <Widget>[
-                      Icon(
-                        Icons.crop_square,
-                        size: 32,
+                      Container(
+                        height: screenHeight,
+                        width: screenHeight * 0.07,
+                        decoration: BoxDecoration(
+                            color: Colors.grey[200],
+                            borderRadius: BorderRadius.circular(16)),
+                        child: Icon(
+                          Icons.arrow_back_ios,
+                          size: 32,
+                        ),
                       ),
                       Spacer(),
                       Container(
                         height: screenHeight,
-                        width: screenHeight *0.07,
+                        width: screenHeight * 0.07,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(16),
                             color: Colors.grey[200]),
@@ -61,7 +68,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                       Container(
                         height: screenHeight,
-                        width: screenHeight*0.07,
+                        width: screenHeight * 0.07,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(16),
                           image: DecorationImage(
@@ -78,7 +85,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 height: screenHeight * 0.03,
               ),
               Text(
-                "Design by Hai Anh",
+                "Sky",
                 style: TextStyle(
                     fontSize: 32 * textSize, fontWeight: FontWeight.bold),
               ),
@@ -99,7 +106,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         borderRadius: BorderRadius.circular(16),
                         image: DecorationImage(
                             image: NetworkImage(
-                                "https://cdn.pixabay.com/photo/2014/10/08/04/47/moon-478982_960_720.jpg"),
+                                "https://images.pexels.com/photos/912110/pexels-photo-912110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"),
                             fit: BoxFit.cover),
                       ),
                       child: Padding(
@@ -108,13 +115,9 @@ class _HomeScreenState extends State<HomeScreen> {
                           mainAxisAlignment: MainAxisAlignment.end,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
-                            Text("Chaos as the human",
+                            Text("Blue Sky",
                                 style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 24 * textSize)),
-                            Text("condition in the universe",
-                                style: TextStyle(
-                                    color: Colors.white,
+                                    color: Colors.blue,
                                     fontSize: 24 * textSize)),
                             SizedBox(height: screenHeight * 0.01),
                             Container(
@@ -126,7 +129,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     padding: const EdgeInsets.only(right: 16.0),
                                     child: Container(
                                       height: screenHeight,
-                                      width: screenHeight*0.07,
+                                      width: screenHeight * 0.07,
                                       decoration: BoxDecoration(
                                           borderRadius:
                                               BorderRadius.circular(16),
@@ -164,7 +167,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         borderRadius: BorderRadius.circular(16),
                         image: DecorationImage(
                             image: NetworkImage(
-                                "https://cdn.pixabay.com/photo/2018/05/12/02/59/illustration-3392326_960_720.jpg"),
+                                "https://images.pexels.com/photos/519411/pexels-photo-519411.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"),
                             fit: BoxFit.cover),
                       ),
                       child: Padding(
@@ -173,13 +176,9 @@ class _HomeScreenState extends State<HomeScreen> {
                           mainAxisAlignment: MainAxisAlignment.end,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
-                            Text("Chaos as the human",
+                            Text("Orange Sky",
                                 style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 24 * textSize)),
-                            Text("condition in the universe",
-                                style: TextStyle(
-                                    color: Colors.white,
+                                    color: Colors.orange,
                                     fontSize: 24 * textSize)),
                             SizedBox(height: screenHeight * 0.01),
                             Container(
@@ -191,7 +190,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     padding: const EdgeInsets.only(right: 16.0),
                                     child: Container(
                                       height: screenHeight,
-                                      width: screenHeight*0.07,
+                                      width: screenHeight * 0.07,
                                       decoration: BoxDecoration(
                                           borderRadius:
                                               BorderRadius.circular(16),
@@ -229,7 +228,7 @@ class _HomeScreenState extends State<HomeScreen> {
                         borderRadius: BorderRadius.circular(16),
                         image: DecorationImage(
                             image: NetworkImage(
-                                "https://cdn.pixabay.com/photo/2014/10/08/04/47/moon-478982_960_720.jpg"),
+                                "https://images.pexels.com/photos/907485/pexels-photo-907485.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"),
                             fit: BoxFit.cover),
                       ),
                       child: Padding(
@@ -238,13 +237,9 @@ class _HomeScreenState extends State<HomeScreen> {
                           mainAxisAlignment: MainAxisAlignment.end,
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: <Widget>[
-                            Text("Chaos as the human",
+                            Text("Pink Sky",
                                 style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 24 * textSize)),
-                            Text("condition in the universe",
-                                style: TextStyle(
-                                    color: Colors.white,
+                                    color: Colors.pink[200],
                                     fontSize: 24 * textSize)),
                             SizedBox(height: screenHeight * 0.01),
                             Container(
@@ -256,7 +251,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     padding: const EdgeInsets.only(right: 16.0),
                                     child: Container(
                                       height: screenHeight,
-                                      width: screenHeight*0.07,
+                                      width: screenHeight * 0.07,
                                       decoration: BoxDecoration(
                                           borderRadius:
                                               BorderRadius.circular(16),
@@ -307,12 +302,12 @@ class _HomeScreenState extends State<HomeScreen> {
                       height: screenHeight * 0.095,
                       width: screenWidth,
                       child: Padding(
-                        padding: const EdgeInsets.all(5.0),
+                        padding: const EdgeInsets.all(8.0),
                         child: Row(
                           children: <Widget>[
                             Container(
-                              height: screenHeight,
-                              width: screenHeight * 0.095,
+                              height: screenWidth*0.13,
+                              width: screenWidth*0.13,
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(16),
                                   image: DecorationImage(
@@ -332,7 +327,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                       fontSize: 20 * textSize,
                                       color: Colors.white),
                                 ),
-                                SizedBox(height: screenHeight * 0.009),
+                                SizedBox(height: screenHeight * 0.005),
                                 Text(
                                   "by Ảnh Hai",
                                   style: TextStyle(
@@ -343,8 +338,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                             Spacer(),
                             Container(
-                              height: screenHeight * 0.07,
-                              width: screenWidth * 0.25,
+                              height: screenWidth*0.11,
+                              width: screenWidth * 0.21,
                               decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(8),
@@ -380,12 +375,12 @@ class _HomeScreenState extends State<HomeScreen> {
                       height: screenHeight * 0.095,
                       width: screenWidth,
                       child: Padding(
-                        padding: const EdgeInsets.all(5.0),
+                        padding: const EdgeInsets.all(8.0),
                         child: Row(
                           children: <Widget>[
                             Container(
-                              height: screenHeight,
-                              width: screenHeight * 0.095,
+                              height: screenWidth*0.13,
+                              width: screenWidth*0.13,
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(16),
                                   image: DecorationImage(
@@ -405,7 +400,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                       fontSize: 20 * textSize,
                                       color: Colors.white),
                                 ),
-                                SizedBox(height: screenHeight * 0.009),
+                                SizedBox(height: screenHeight * 0.005),
                                 Text(
                                   "by Ảnh Hai",
                                   style: TextStyle(
@@ -416,8 +411,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                             Spacer(),
                             Container(
-                              height: screenHeight * 0.07,
-                              width: screenWidth * 0.25,
+                              height: screenWidth*0.11,
+                              width: screenWidth * 0.21,
                               decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(8),
@@ -436,7 +431,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     size: 32,
                                     color: Colors.greenAccent,
                                   ),
-                                  Text("200 ",
+                                  Text("300 ",
                                       style: TextStyle(
                                           fontSize: 20 * textSize,
                                           fontWeight: FontWeight.bold))
@@ -453,12 +448,12 @@ class _HomeScreenState extends State<HomeScreen> {
                       height: screenHeight * 0.095,
                       width: screenWidth,
                       child: Padding(
-                        padding: const EdgeInsets.all(5.0),
+                        padding: const EdgeInsets.all(8.0),
                         child: Row(
                           children: <Widget>[
                             Container(
-                              height: screenHeight,
-                              width: screenHeight * 0.095,
+                              height: screenWidth*0.13,
+                              width: screenWidth*0.13,
                               decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(16),
                                   image: DecorationImage(
@@ -478,7 +473,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                       fontSize: 20 * textSize,
                                       color: Colors.white),
                                 ),
-                                SizedBox(height: screenHeight * 0.009),
+                                SizedBox(height: screenHeight * 0.005),
                                 Text(
                                   "by Ảnh Hai",
                                   style: TextStyle(
@@ -489,8 +484,8 @@ class _HomeScreenState extends State<HomeScreen> {
                             ),
                             Spacer(),
                             Container(
-                              height: screenHeight * 0.07,
-                              width: screenWidth * 0.25,
+                              height: screenWidth*0.11,
+                              width: screenWidth * 0.21,
                               decoration: BoxDecoration(
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(8),
@@ -509,7 +504,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     size: 32,
                                     color: Colors.greenAccent,
                                   ),
-                                  Text("200 ",
+                                  Text("400 ",
                                       style: TextStyle(
                                           fontSize: 20 * textSize,
                                           fontWeight: FontWeight.bold))
