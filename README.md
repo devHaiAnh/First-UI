@@ -41,7 +41,6 @@ This is a collection of screens that I designed based on designs on https://drib
 - Course Music
 
 <img src="https://raw.githubusercontent.com/devHaiAnh/Mini-UI/master/Screenshots/course_music1.png" width="200"/> <img src="https://raw.githubusercontent.com/devHaiAnh/Mini-UI/master/Screenshots/course_music2.png" width="200"/> <img src="https://raw.githubusercontent.com/devHaiAnh/Mini-UI/master/Screenshots/course_music3.png" width="200"/> <img src="https://raw.githubusercontent.com/devHaiAnh/Mini-UI/master/Screenshots/course_music4.png" width="200"/>
-<img src="https://raw.githubusercontent.com/devHaiAnh/Mini-UI/master/Gif/course_music.gif" width="300"/> 
 
 ### Contact
 
